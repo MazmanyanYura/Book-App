@@ -1,0 +1,20 @@
+{
+  "name": "Book App",
+  "version": "1.0.0",
+  "description": "Cool book app",
+  "main": "bundle.min.js",
+  "type": "module",
+  "scripts": {
+    "start": "live-server",
+    "build": "rollup -c --watch"
+  },
+  "author": "Mazmanyan Yura",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "eslint": "^8.57.0",
+    "rollup": "^4.12.1",
+    "rollup-plugin-import-css": "^3.5.0"
+  }
+}
