@@ -5,8 +5,8 @@ export default {
   input: "src/app.js",
   output: [
     {
-      file: "dist/bundle.min.js",
-      format: "es",
+      file: "dist/app.js",
+      format: "iife",
       plugins: [terser()],
     },
   ],

@@ -2,7 +2,7 @@
   "name": "Book App",
   "version": "1.0.0",
   "description": "Cool book app",
-  "main": "bundle.min.js",
+  "main": "app.js",
   "type": "module",
   "scripts": {
     "start": "live-server",
