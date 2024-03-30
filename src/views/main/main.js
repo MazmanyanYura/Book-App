@@ -1,5 +1,6 @@
 import { AbstractView } from "../../common/view.js";
 import onChange from "on-change";
+import { Header } from "../../components/Header/Header.js";
 export class MainView extends AbstractView {
   state = {
     list: [],
@@ -20,9 +21,12 @@ export class MainView extends AbstractView {
 
   render() {
     const main = document.createElement("div");
-    main.innerHTML = `Число книг ${this.appState.favorites.length}`;
     this.app.innerHTML = "";
     this.app.append(main);
-    this.appState.favorites.push("f");
+    this.renderHeader();
+  }
+  renderHeader() {
+    const header = new Header(this.appState).render();
+    this.app.prepend(header);
   }
 }
