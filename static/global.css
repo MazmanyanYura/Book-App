@@ -1,1 +1,8 @@
-
+body {
+  font-family: sans-serif;
+  color: var(--black);
+}
+:root {
+  --black: #121212;
+  --white: #fafafa;
+}
