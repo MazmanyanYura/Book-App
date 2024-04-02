@@ -22,7 +22,7 @@ export class MainView extends AbstractView {
   }
   appStateHook(path) {
     if (path === "favorites") {
-      console.log(path);
+      this.render();
     }
   }
   async stateHook(path) {
@@ -37,9 +37,7 @@ export class MainView extends AbstractView {
       this.state.list = data.docs;
     }
 
-    if (path === "list" || path === "loading") {
-      this.render();
-    }
+    if (path === "list" || path === "loading") this.render();
   }
   async loadList(q, offset) {
     const res = await fetch(

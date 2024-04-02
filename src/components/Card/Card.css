@@ -52,7 +52,5 @@
   display: flex;
   background: none;
   border: 1px solid var(--white);
-}
-.button_add {
-  background: var(--white);
+  background: var(--black);
 }
