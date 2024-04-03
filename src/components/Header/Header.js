@@ -21,7 +21,7 @@ export class Header extends DivComponent {
         </a>
       </li>
       <li class="menu__item">
-        <a class="menu__item-link" href="#">
+        <a class="menu__item-link" href="#favorites">
           <img 
           src="/static/images/favorites-icon.svg" 
           alt="Избранное иконка" />
